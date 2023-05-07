@@ -80,7 +80,7 @@
       <h3> Top 10 Adverse Drug Effects Over 10 Years </h3>
       <iframe src="PlotTopDrugReactions.html" width="100%" height="600" frameborder="0" text-align:="" center=""></iframe>
       <div class='py-3 my-4'></div>
-      <p> For this section, we utilized the FDAs drug event API to generate a visualization of the top adverse drug reactions for a given range of years. The visualization below shows the last 10 (whole) years and the top 10 adverse side effects for these drugs. Using this grouped bar chart. The top 100 adverse drug effects were gathered for each year. Note, these top 100 side effects were a different list each year, and in different orders. Because of this the data was normalized and the cumulative top side effects are shown.The insights that can be made from the generated visualization include: </p> 
+      <p> For this section, we utilized the FDAs drug event API to generate a visualization of the top adverse drug reactions for a given range of years. The visualization above shows the last 10 (whole) years and the top 10 adverse side effects for these drugs. Using this grouped bar chart, the top 100 adverse drug effects were gathered for each year. Note, these top 100 side effects were a different list each year, and in different orders. Because of this the data was normalized and the cumulative top side effects are shown.The insights that can be made from the generated visualization include: </p> 
       <p> By far the largest category in the list of adverse effects is "drug ineffective". </p>
       <p> There is a rapidly increasing overall number of adverse effects due to perscription drugs over the past 10 years. </p>
       <p> Death is a surprisingly more frequent adverse reaction than milder reactions like fatigue or nausea </p>
@@ -88,7 +88,7 @@
       <p> Note: the count in these diagrams is cumulative data submitted through FAERS to the FDA since 2004. The frequency of updates is quarterly, and the data may lag by as much as 3 months or more, depending upon when the FAERS data is released.</p>
       <div class='py-3 my-4'></div>
 
-      <h3> Drug Interaction Table (A->Z) </h3>
+      <h3> Drug Interaction Table for Tylenol (A->Z) </h3>
       <iframe src="InteractionTable.html" width="100%" height="600" frameborder="0" text-align:="" center=""></iframe>
       <p> This table was created via the Python library, Plotly, using the National Library of Medicine API. We parsed and extracted the JSON data about interactions with all of these drugs. It contains a description of the interaction, and also a link to the Drug Bank website on the corresponding drug to find additional information.  The key insights that can be gained is that even for very benign drugs such as Tylenol, there are many, many interactions. In this case, 1294 interactions are listed.  Some key insights that can be made from this data are: </p>
       <p> Acetaminophen (mentioned earlier) is involved in many drug interactions, both as a perpetrator and a victim. When combined with other drugs, it lead to potential toxicity, for instance: </p>
