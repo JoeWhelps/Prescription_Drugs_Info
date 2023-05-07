@@ -55,6 +55,12 @@
       <p> However the graph below shows the rising number of deaths due to perscription drugs which,  whether due to overdosing or due to the side effects such as drug dependence which led to the death, raises serious concerns about the safety of the drugs that people take on a regular basis </p>
       <p> What are the consequences of the US's drug-dependent practice? What are the dangers of giving drugs to the public which the public does not fully understand? How can the public make better informed decisions about the common drugs which we use on a regular basis? </p>
       <p> These are some of the questions which we began this project with, and through analysis we have found many helpful representations of data which can help start individual research on the drugs one plans on taking. </p>
+      <p> In order to be a smarter patient this website will help acheiving the following goals: </p>
+      <p> 1. Be aware of and define the most common terms used in Perscription Drugs </p>
+      <p> 2. Be aware of the most common adverse effects from drugs </p>
+      <p> 3. Look up and be conscience of the effects of mixing certain drugs </p>
+      <p> 4. See the most common drugs and their unique adverse effects </p>
+      <p> 5. Have knowledge of the local Pharmacies in your area </p>
       <div class='py-3 my-4'></div>
       <p> These graphs below are found from sources on the internet and are merely meant to introduce this website and all of the following data representations.
       <p> As a final note, this website is merely in its beta stage. The data is not conclusive and we are not medical professionals. While conclusions can be gained from the existing data, these models should merely prompt further research from you, the user, and we hope this website encourages you, the user, to become more informed about the chemicals you are putting in your body. </p
@@ -67,36 +73,38 @@
       <div class='py-3 my-4'></div>
       <p> The word cloud is generated from a list of brand names of drugs retrieved from the FDA's API endpoint. The size of the words in the word cloud represents the frequency of the brand name in the list.  From the word cloud, we can see that some of the most commonly prescribed drugs include Lipitor, Crestor, Tylenol, Advil, and Zoloft. We can also see that there are many generic drug names, such as Ibuprofen, Acetaminophen, and Amoxicillin, which suggests that these types of drugs are widely used and prescribed.  Overall, the word cloud gives us a quick and visually appealing overview of the most frequently prescribed drugs based on brand name, which can be useful for understanding trends in the pharmaceutical industry.</p>
       <p> This is useful in that it shows visually the most frequent things associated with perscription drugs and can be used as a resource to famililarize oneself with the terminology which is most frequently used regarding Perscription drugs. 
-      <p> For example, one insight to be gained is to see that Hydrochoride is the largest word in the cloud. What is Hydrocloride? This drug gets rid of extra salt and water in the body to treat heart failure, liver disease, or kidney disease. </p>
+      <p> For example, one insight to be gained is to see that Hydrochoride is the largest word in the cloud. What is Hydrocloride? This drug gets rid of extra salt and water in the body to treat heart failure, liver disease, or kidney disease. Since this is the most common word, it can also lead to insights about the amount of heart failure, liver disease and kidney disease in the United States. </p>
+      <p> Another large insight is how big the word Acetaminophen is. This makes sense because Acetaminophen is the main ingredient in Tylenol and hundreds of other over-the-counter drugs that deal with pain/fevers. This gives another insight about the common drugs used in Medicine.</p>
       <div class='py-3 my-4'></div>
       
       <h3> Top 10 Adverse Drug Effects Over 10 Years </h3>
       <iframe src="PlotTopDrugReactions.html" width="100%" height="600" frameborder="0" text-align:="" center=""></iframe>
       <div class='py-3 my-4'></div>
-      <p> For this section, we utilize the FDAs drug event API to generate a visualization of the top adverse drug reactions for a given range of years. The visualization below shows the last 10 (whole) years and the top 10 adverse side effects for these drugs. Using this grouped bar chart. The top 100 adverse drug effects were gathered for each year. Note, these top 100 side effects were a different list each year, and in different orders. Because of this the data was normalized and the cumulative top side effects are shown.The insights that can be made from the generated visualization include: </p> 
-      <p> The top adverse drug reactions reported to the FDA within the specified range of years, which was "drug ineffective". </p>
-      <p> There was an rapidly increasing number of adverse effects due to drugs over the past 10 years. </p>
-      <p> Death is a surprisingly more frequent reaction than milder reactions like fatigue or nausea </p>
+      <p> For this section, we utilized the FDAs drug event API to generate a visualization of the top adverse drug reactions for a given range of years. The visualization below shows the last 10 (whole) years and the top 10 adverse side effects for these drugs. Using this grouped bar chart. The top 100 adverse drug effects were gathered for each year. Note, these top 100 side effects were a different list each year, and in different orders. Because of this the data was normalized and the cumulative top side effects are shown.The insights that can be made from the generated visualization include: </p> 
+      <p> By far the largest category in the list of adverse effects is "drug ineffective". </p>
+      <p> There was an rapidly increasing overall number of adverse effects due to drugs over the past 10 years. </p>
+      <p> Death is a surprisingly more frequent adverse reaction than milder reactions like fatigue or nausea </p>
       <p> It is also worth to note how pain has dramatically increased as a adverse reaction in 2021 and 2022 compared to 2020 and 2019.</p>
       <p> Note: the count in these diagrams is cumulative data submitted through FAERS to the FDA since 2004. The frequency of updates is quarterly, and the data may lag by as much as 3 months or more, depending upon when the FAERS data is released.</p>
       <div class='py-3 my-4'></div>
-      
-      <h4> Aspirin Side Effects </h4>
-      <iframe src="Side_effects_for_a_drug.html" width="100%" height="600" frameborder="0" text-align:="" center=""></iframe>
-      <div class='py-3 my-4'></div>
-      <p>The resulting graph shows the incidence of side effects associated with aspirin. By looking at the plot, one can gain insight into the types of side effects associated with aspirin, their relative frequencies, and the overall safety profile of the drug. It can also help healthcare providers and patients make informed decisions about the use of the drug.</p>
-      <p> As seen 
-      <div class='py-3 my-4'></div>
-      
-      <h5> Drug Interaction Table (A->Z) </h5>
+
+      <h4> Drug Interaction Table (A->Z) </h4>
       <iframe src="InteractionTable.html" width="100%" height="600" frameborder="0" text-align:="" center=""></iframe>
       <p> This table was created via the Python library, Plotly, using the National Library of Medicine API. We parsed and extracted the JSON data about interactions with all of these drugs. It contains a description of the interaction, and also a link to the Drug Bank website on the corresponding drug to find additional information.  The key insights that can be gained is that even for very benign drugs such as Tylenol, there are many, many interactions. In this case, 1294 interactions are listed.  Some key insights that can be made from this data are: </p>
-      <p> Acetaminophen is involved in many drug interactions, both as a perpetrator and a victim. When combined with other drugs, it lead to potential toxicity, for instance: </p>
+      <p> Acetaminophen (mentioned earlier) is involved in many drug interactions, both as a perpetrator and a victim. When combined with other drugs, it lead to potential toxicity, for instance: </p>
       <p> Can increase the serum concentration of some drugs: Abametapir and Abiraterone </p>
       <p> Can decrease the metabolism of some drugs: 8-chlorotheophylline and Acebutolol </p> 
       <p> Can decrease the excretion rate of some drugs: Abacavir and Acrivastine </p>
       <p> Can increase the metabolism of Acetaminophen: Adalimumab </p>
       <p> Ademetionine can increase the hepatoprotective effects of Acetaminophen, which can be useful in preventing liver damage caused by an overdose of Acetaminophen.</p>
+      <div class='py-3 my-4'></div>
+      
+      <h5> Aspirin Side Effects </h5>
+      <iframe src="Side_effects_for_a_drug.html" width="100%" height="600" frameborder="0" text-align:="" center=""></iframe>
+      <div class='py-3 my-4'></div>
+      <p>The resulting graph shows the incidence of side effects associated with aspirin. By looking at the plot, one can gain insight into the types of side effects associated with aspirin, their relative frequencies, and the overall safety profile of the drug. It can also help healthcare providers and patients make informed decisions about the use of the drug.</p>
+      <p> One clear insight is how fatigue is the most common adverse effect </p>
+      < 
       <div class='py-3 my-4'></div>
       
       <h6> The Common Adverse Reactions From The Top Ten Drugs </h6>
@@ -112,13 +120,15 @@
       <iframe src="ToptendrugplotsSimvastatin.html" width="100%" height="400" frameborder="0" text-align:="" center=""></iframe>
       <div class='py-3 my-4'></div>
       <p>We were curious about the top 10 prescribed drugs and the associated adverse reactions. This data can provide insights into the safety and side effects of these commonly prescribed medications. By visualizing the frequency of different adverse reactions associated with each drug, healthcare professionals can make more informed decisions when prescribing medications to patients.</p>
-      <p> It can be seen that fatigue is in the top 3 of 8/10 of the drug major adverse effects, and fatigue is the number one adverse effect in 6/10 of the drugs. </p>
+      <p> It can be seen that fatigue is in the top 3 adverse effects in 8/10 of the most common drugs, and also fatigue is the number one adverse effect in 6/10 of the most common drugs. </p>
+      <p> 
       <div class='py-3 my-4'></div>
       
       <h7> Pharmacy Ph-inder (Finder) </h7>
       <img src="notredamemap.png" class="img-fluid center" alt="Responsive image" height="300">
       <div class='py-3 my-4'></div>
       <p> The code uses the Google Maps API to find nearby pharmacies in a given location. It prompts the user for a location (either a zip code or city and state), then uses geocoding to get the latitude and longitude of the location. The code then searches for nearby pharmacies within a 5 km radius of the location using the Google Places API and creates a list of pharmacy information. It also creates a map using the gmaps library and displays it using IPython widgets. Finally, the code prints a list of pharmacy names and writes the pharmacy information to a CSV file.This code could be useful for someone who needs to find nearby pharmacies in a given location, for example, someone traveling to a new city and needing to locate pharmacies in case they need to purchase medication or medical supplies. The code also demonstrates how to use the Google Maps API and gmaps library to create a map with markers and info boxes.</p>
+      
       <div class='py-3 my-4'></div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
