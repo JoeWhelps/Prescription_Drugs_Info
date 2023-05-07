@@ -52,24 +52,31 @@
       <h1>Perscription Drug Information Hub</h1>
       <div class='py-3 my-4'></div>
       <p> As seen from the graph below, Perscription drugs are an integral part of everyday life for over 60% of people in America.  </p>
-      <p> However the graph below which shows the rising number of deaths due to perscription drugs, whether due to overdosing or due to the side effects such as drug dependence which led to the death, all raises serious concerns about the safety of the drugs that people take on a regular basis </p>
-      <p> What are the consequences of this drug-dependent practice? What are the dangers of giving drugs to the public which we do not fully understand? How can the public make better informed decisions about the common drugs which we use on a regular basis? </p>
+      <p> However the graph below shows the rising number of deaths due to perscription drugs which,  whether due to overdosing or due to the side effects such as drug dependence which led to the death, raises serious concerns about the safety of the drugs that people take on a regular basis </p>
+      <p> What are the consequences of the US's drug-dependent practice? What are the dangers of giving drugs to the public which the public does not fully understand? How can the public make better informed decisions about the common drugs which we use on a regular basis? </p>
       <p> These are some of the questions which we began this project with, and through analysis we have found many helpful representations of data which can help start individual research on the drugs one plans on taking. </p>
       <div class='py-3 my-4'></div>
       <p> These graphs below are found from sources on the internet and are merely meant to introduce this website and all of the following data representations.
-      <p> As a final note, this website is merely in beta stage. The data is not conclusive and we are not medical professionals. While conclusions can be gained from the existing data, these models should merely prompt further research from you, the user, and we hope this website encourages you, the user, to become more informed about the chemicals you are putting in your body. </p>
+      <p> As a final note, this website is merely in its beta stage. The data is not conclusive and we are not medical professionals. While conclusions can be gained from the existing data, these models should merely prompt further research from you, the user, and we hope this website encourages you, the user, to become more informed about the chemicals you are putting in your body. </p>
       
       <img src="https://www.kff.org/wp-content/uploads/2021/10/Feature-Image-Prescription-Drug-Charticle.png" class="img-fluid center" alt="Responsive image" height="50">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/US_timeline._Prescription_drug_overdose_deaths.jpg" class="img-fluid center" alt="Responsive image" height="50">
       <div class='py-3 my-4'></div>
+      <h2>Common Drug Terminology</h2>
       <iframe src="wordcloudstatic.html" width="100%" height="400" frameborder="0" text-align:="" center=""></iframe>
       <div class='py-3 my-4'></div>
       <p> The word cloud is generated from a list of brand names of drugs retrieved from the FDA's API endpoint. The size of the words in the word cloud represents the frequency of the brand name in the list.  From the word cloud, we can see that some of the most commonly prescribed drugs include Lipitor, Crestor, Tylenol, Advil, and Zoloft. We can also see that there are many generic drug names, such as Ibuprofen, Acetaminophen, and Amoxicillin, which suggests that these types of drugs are widely used and prescribed.  Overall, the word cloud gives us a quick and visually appealing overview of the most frequently prescribed drugs based on brand name, which can be useful for understanding trends in the pharmaceutical industry.</p>
       <p> This is useful in that it shows visually the most frequent things associated with perscription drugs and can be used as a resource to famililarize oneself with the terminology which is most frequently used regarding Perscription drugs. 
       <div class='py-3 my-4'></div>
+      <h3> Top 10 Adverse Drug Effects Over 10 Years </h3>
       <iframe src="PlotTopDrugReactions.html" width="100%" height="600" frameborder="0" text-align:="" center=""></iframe>
       <div class='py-3 my-4'></div>
-      <p> paragraph here.</p>
+      <p> For this section, we utilize the FDAs drug event API to generate a visualization of the top adverse drug reactions for a given range of years. The visualization below shows the last 10 (whole) years and the top 10 adverse side effects for these drugs. Using this grouped bar chart. The top 100 adverse drug effects were gathered for each year. Note, these top 100 side effects were a different list each year, and in different orders. Because of this the data was normalized and the cumulative top side effects are shown.The insights that can be made from the generated visualization include: </p> 
+      <p> The top adverse drug reactions reported to the FDA within the specified range of years, which was "drug ineffective". </p>
+      <p> There was an rapidly increasing number of adverse effects due to drugs over the past 10 years. </p>
+      <p> Death is a surprisingly more frequent reaction than milder reactions like fatigue or nausea </p>
+      <p> It is also worth to note how pain has dramatically increased as a adverse reaction in 2021 and 2022 compared to 2020 and 2019.</p>
+      <p> Note: the count in these diagrams is cumulative data submitted through FAERS to the FDA since 2004. The frequency of updates is quarterly, and the data may lag by as much as 3 months or more, depending upon when the FAERS data is released.</p>
       <div class='py-3 my-4'></div>
       <iframe src="Side_effects_for_a_drug.html" width="100%" height="600" frameborder="0" text-align:="" center=""></iframe>
       <div class='py-3 my-4'></div>
